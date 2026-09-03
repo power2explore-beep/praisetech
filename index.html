@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PraiseTech builds sharper digital systems for ambitious businesses." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>PraiseTech | Build Beyond</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#top" aria-label="PraiseTech home"><span class="logo-mark">P</span><h2>Praise<span>Tech</span></h2></a>
+            </div>
+            <nav aria-label="Main navigation">
+                <ul class="nav">
+                    <li class="item"><a href="#top">Home</a></li>
+                    <li class="item"><a href="#about">About</a></li>
+                    <li class="item"><a href="#services">Services</a></li>
+                    <li class="item"><a href="#contact">Contacts</a></li>
+                </ul>
+            </nav>
+            <ul class="buttons">
+                <li class="item"><a href="#contact" class="login">Login</a></li>
+                <li class="item"><a href="#contact" class="btn">Book Now <span aria-hidden="true">↗</span></a></li>
+            </ul>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+    </header>
+    <main id="top">
+        <section class="hero">
+            <div class="hero-image" role="img" aria-label="PraiseTech logo in a futuristic city"></div>
+            <div class="hero-shade"></div>
+            <div class="container hero-content">
+                <p class="eyebrow"><span></span> Next-generation technology partner</p>
+                <h1>Build beyond<br><em>what's possible.</em></h1>
+                <p class="hero-copy">We turn complex ideas into intelligent digital products that move your business forward.</p>
+                <div class="hero-actions"><a class="btn btn-large" href="#services">Explore our work <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">Discover PraiseTech <span aria-hidden="true">→</span></a></div>
+                <div class="hero-meta"><span>01</span><i></i><span>WE MAKE IT REAL</span></div>
+            </div>
+            <div class="scroll-note">Scroll to explore <span>↓</span></div>
+        </section>
+        <section class="intro" id="about"><div class="container intro-grid"><div><p class="section-label">01 / Who we are</p><h2>Technology with<br><span>purpose.</span></h2></div><div class="intro-copy"><p>PraiseTech is a digital innovation studio for people building what comes next. From the first sketch to the final launch, we bring strategy, design, and engineering into one focused team.</p><a class="arrow-link" href="#contact">Meet the team <span>↗</span></a></div></div></section>
+        <section class="services" id="services"><div class="container"><div class="section-heading"><div><p class="section-label">02 / What we do</p><h2>Ideas into <span>impact.</span></h2></div><p>One team. Every layer of the digital experience.</p></div><div class="service-grid"><article><span class="service-number">01</span><h3>Product<br>strategy</h3><p>Clarity for the road ahead, grounded in real customer needs.</p><a href="#contact" aria-label="Learn about product strategy">↗</a></article><article><span class="service-number">02</span><h3>Experience<br>design</h3><p>Beautiful, intuitive interfaces people want to use.</p><a href="#contact" aria-label="Learn about experience design">↗</a></article><article><span class="service-number">03</span><h3>Digital<br>engineering</h3><p>Fast, resilient technology made to scale with ambition.</p><a href="#contact" aria-label="Learn about digital engineering">↗</a></article></div></div></section>
+        <section class="contact" id="contact"><div class="container contact-inner"><div><p class="section-label">03 / Start a conversation</p><h2>Make your next<br>move <span>count.</span></h2></div><a class="btn btn-large" href="mailto:hello@praisetech.com">Let's talk <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer><div class="container"><span>© 2026 Praise Technologies</span><span>Digital, by design.</span></div></footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        toggle.addEventListener('click', () => {
+            const open = nav.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+    </script>
+</body>
+</html>
